@@ -56,25 +56,37 @@ public class menuOpcoes {
 
     }
 
-    static void enviarMercadoria(Scanner scanner, String placa, String modelo, double capacidadeMaximaKG) {
-        System.out.println("Inicializando envio de mercadoria...");
-        System.out.println("Insira aqui a placa do veículo: ");
-        String placaEnviada = scanner.nextLine();
-
-        for (placaEnviada p : lista) {
-            if (p.placa == placaEnviada) {
-                placa = p;
-
-                break;
+    encontrarVeiculo(String placa, ArrayList<veiculo> lista) {
+        for (veiculo v : lista) {
+            if (v.placa.equalsIgnoreCase(placa)) {
+                return v;
             }
-
-            System.out.println("Insira o modelo do veículo: ");
-            String modelo = scanner.nextLine();
-            System.out.println("Insira a capacidade máxima (em KG): ");
-            double capacidadeMaximaKG = scanner.nextDouble();
-            scanner.nextLine();
-
-
         }
+        return null;
+    }
+
+}
+
+static void enviarMercadoria(Scanner scanner, String placa, String modelo, double capacidadeMaximaKG) {
+    System.out.println("Inicializando envio de mercadoria...");
+    System.out.println("Insira aqui a placa do veículo desejado: ");
+    String placaEnviada = scanner.nextLine();
+
+    veiculo veiculoEncontrado = encontrarVeiculo(placaEnviada, lista);
+
+    if (veiculoEncontrado != null){
+        System.out.println("Veículo encontrado! Modelo: "+veiculoEncontrado.modelo);
+
+
+
+
+    System.out.println("Insira o modelo do veículo: ");
+    String modelo = scanner.nextLine();
+    System.out.println("Insira a capacidade máxima (em KG): ");
+    double capacidadeMaximaKG = scanner.nextDouble();
+    scanner.nextLine();
+
+
+}
 
     }
