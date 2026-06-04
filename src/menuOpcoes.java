@@ -44,18 +44,37 @@ public class menuOpcoes {
 
         veiculo novoVeiculo = null;
 
-        if (tipo == 1){
+        if (tipo == 1) {
             novoVeiculo = new moto(placa, modelo, capacidadeMaximaKG);
         } else if (tipo == 2) {
             novoVeiculo = new caminhao(placa, modelo, capacidadeMaximaKG);
         }
 
         lista.add(novoVeiculo);
-        System.out.println("Veículo "+novoVeiculo.modelo+" de placa"+novoVeiculo.placa+" cadastrado!");
-
+        System.out.println("Veículo " + novoVeiculo.modelo + " de placa" + novoVeiculo.placa + " cadastrado!");
 
 
     }
 
+    static void enviarMercadoria(Scanner scanner, String placa, String modelo, double capacidadeMaximaKG) {
+        System.out.println("Inicializando envio de mercadoria...");
+        System.out.println("Insira aqui a placa do veículo: ");
+        String placaEnviada = scanner.nextLine();
 
-}
+        for (placaEnviada p : lista) {
+            if (p.placa == placaEnviada) {
+                placa = p;
+
+                break;
+            }
+
+            System.out.println("Insira o modelo do veículo: ");
+            String modelo = scanner.nextLine();
+            System.out.println("Insira a capacidade máxima (em KG): ");
+            double capacidadeMaximaKG = scanner.nextDouble();
+            scanner.nextLine();
+
+
+        }
+
+    }

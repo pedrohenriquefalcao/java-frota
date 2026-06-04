@@ -18,6 +18,7 @@ public class Main {
                 case 1:
                     menuOpcoes.cadastrarVeiculo(scanner, listaDeVeiculos);
                     break;
+                case 2:
 
             }
         } while (opcaoUsuario != 5);
