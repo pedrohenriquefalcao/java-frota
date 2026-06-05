@@ -20,7 +20,7 @@ public class caminhao extends veiculo {
             return;
         }
 
-        double totalFrete = distancia * 5.0;
+        double totalFrete = (distancia * 5.0) + (pesoCarga * 0.50);
         System.out.println("= Resumo do Frete (Moto) =");
         System.out.println("Distância: " + distancia + " km | Peso: " + pesoCarga + " kg");
         System.out.println("Valor Total do Frete: R$ " + totalFrete);
