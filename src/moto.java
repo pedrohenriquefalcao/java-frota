@@ -12,4 +12,16 @@ public class moto extends veiculo {
 
     public moto(Scanner placa, Scanner modelo, Scanner capacidadeMaximaKG) {
     }
+
+    public void calcularFrete(double distancia, double pesoCarga) {
+        if (pesoCarga = this.capacidadeMaximaKG) {
+            System.out.println("Erro! Envio cancelado!");
+            System.out.println("O peso da carga (" + pesoCarga + "kg) ultrapassou a capacidade da moto (" + this.capacidadeMaximaKG + "kg)");
+            return;
+        }
+
+        double totalFrete = distancia * 2.0;
+
+    }
+
 }
