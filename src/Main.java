@@ -19,8 +19,9 @@ public class Main {
                     menuOpcoes.cadastrarVeiculo(scanner, listaDeVeiculos);
                     break;
                 case 2:
-
+                    menuOpcoes.enviarMercadoria(scanner, listaDeVeiculos);
             }
+
         } while (opcaoUsuario != 5);
 
 //        Simular Envio de Mercadoria: >     * O usuário digita a placa do veículo que deseja usar.
