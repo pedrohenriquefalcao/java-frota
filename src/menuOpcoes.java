@@ -57,7 +57,7 @@ public class menuOpcoes {
         System.out.println("Veículo " + novoVeiculo.modelo + " de placa [" + novoVeiculo.placa + "] cadastrado com sucesso!\n");
     }
 
-    public static veiculo encontrarVeiculo(String placa, ArrayList<veiculo> lista) {
+    static veiculo encontrarVeiculo(String placa, ArrayList<veiculo> lista) {
         for (veiculo v : lista) {
             if (v.placa.equalsIgnoreCase(placa)) {
                 return v;
@@ -88,5 +88,10 @@ public class menuOpcoes {
         } else {
             System.out.println("Erro: Veículo de placa [" + placaEnviada + "] não foi localizado no sistema.");
         }
+
+    }
+
+    static void listarFrota() {
+
     }
 }
