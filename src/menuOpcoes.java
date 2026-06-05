@@ -79,7 +79,7 @@ public class menuOpcoes {
             System.out.println("Insira a distância da entrega (em KM): ");
             double distancia = scanner.nextDouble();
 
-            System.out.println("Insira o peso total da carga atual (em KG): ");
+            System.out.println("Insira o peso total da carga da mercadoria (em KG): ");
             double pesoCarga = scanner.nextDouble();
             scanner.nextLine();
 

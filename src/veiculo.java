@@ -16,6 +16,6 @@ public abstract class veiculo {
     void cadastrarVeiculo() {
     }
 
-    abstract void calcularFrete();
+    abstract void calcularFrete(double distancia, double pesoCarga);
 
 }

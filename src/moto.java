@@ -15,7 +15,7 @@ public class moto extends veiculo {
 
     @Override
     public void calcularFrete(double distancia, double pesoCarga) {
-        if (pesoCarga = this.capacidadeMaximaKG) {
+        if (pesoCarga == this.capacidadeMaximaKG) {
             System.out.println("Erro! Envio cancelado!");
             System.out.println("O peso da carga (" + pesoCarga + "kg) ultrapassou a capacidade da moto (" + this.capacidadeMaximaKG + "kg)");
             return;
