@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class menuOpcoes {
 
     static void exibirMenu() {
-        System.out.println("===== Sistema LogiTech (v1.0) =====");
+        System.out.println("\n===== Sistema LogiTech (v1.0) =====");
         System.out.println("== Digite [1] para cadastrar novo veículo");
         System.out.println("== Digite [2] para simular envio de mercadoria");
         System.out.println("== Digite [3] para listar frota cadastrada");
