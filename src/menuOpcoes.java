@@ -91,7 +91,9 @@ public class menuOpcoes {
 
     }
 
-    static void listarFrota() {
-
+    static void listarFrota(ArrayList<veiculo> lista, String placa, String modelo, double capacidadeMaxima) {
+        System.out.println("\n= Inicializando Listagem de frota =");
+        System.out.println("\n= Veículos cadastrados: =");
+        for (int i: i < ArrayList<veiculo> lista)
     }
 }
