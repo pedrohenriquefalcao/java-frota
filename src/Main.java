@@ -20,11 +20,13 @@ public class Main {
                     break;
                 case 2:
                     menuOpcoes.enviarMercadoria(scanner, listaDeVeiculos);
+                    break;
                 case 3:
                     menuOpcoes.listarFrota(listaDeVeiculos);
+                    break;
             }
 
-        } while (opcaoUsuario != 5);
+        } while (opcaoUsuario != 4);
 
 //        Simular Envio de Mercadoria: >     * O usuário digita a placa do veículo que deseja usar.
 //

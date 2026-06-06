@@ -17,7 +17,7 @@ public class menuOpcoes {
         System.out.println("== Digite [1] para cadastrar novo veículo");
         System.out.println("== Digite [2] para simular envio de mercadoria");
         System.out.println("== Digite [3] para listar frota cadastrada");
-        System.out.println("== Digite [5] para encerrar o programa.");
+        System.out.println("== Digite [4] para encerrar o programa.");
         System.out.print("Escolha uma opção: ");
     }
 
