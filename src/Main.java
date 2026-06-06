@@ -21,7 +21,7 @@ public class Main {
                 case 2:
                     menuOpcoes.enviarMercadoria(scanner, listaDeVeiculos);
                 case 3:
-                    menuOpcoes.listarFrota(scanner, listaDeVeiculos);
+                    menuOpcoes.listarFrota(listaDeVeiculos);
             }
 
         } while (opcaoUsuario != 5);

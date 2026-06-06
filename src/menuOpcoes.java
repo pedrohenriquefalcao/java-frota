@@ -94,9 +94,22 @@ public class menuOpcoes {
     static void listarFrota(ArrayList<veiculo> lista) {
         System.out.println("\n= Inicializando Listagem de frota =");
         System.out.println("\n= Veículos cadastrados: =");
+
+        int numeroVeiculo = 1;
+
         for (veiculo v: lista) {
-            System.out.println("[VEÍCULO] Placa: "+v.placa+" Modelo: "+v.modelo+" Capacidade máxima (KG): "+v.capacidadeMaximaKG);
-            return;
+
+
+            String tipoVeiculo = "Desconhecido";
+
+            if (v instanceof moto) {
+                tipoVeiculo = "MOTO";
+            } else if (v instanceof caminhao) {
+                tipoVeiculo = "CAMINHÃO";
+            }
+
+            System.out.println(numeroVeiculo+": ["+tipoVeiculo+"] Placa: "+v.placa+" Modelo: "+v.modelo+" Capacidade máxima (KG): "+v.capacidadeMaximaKG);
+            numeroVeiculo++;
         }
     }
 
